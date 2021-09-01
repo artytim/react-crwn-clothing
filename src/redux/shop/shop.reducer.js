@@ -2,8 +2,7 @@ import ShopActionTypes from './shop.types';
 
 const INITIAL_STATE = {
   collections: null,
-  isFetching: true, //  should be default to true...
-  // isFetching: false,
+  isFetching: false,
   errorMessage: undefined,
 };
 
