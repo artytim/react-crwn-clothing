@@ -16,8 +16,8 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
 
 const App = () => {
-  const currentUser = useSelector(selectCurrentUser);
   const dispatch = useDispatch(); // dispatch() never updates
+  const currentUser = useSelector(selectCurrentUser);
   // const func = () => { // new instance of a function
   //   console.log('hey!');
   // };

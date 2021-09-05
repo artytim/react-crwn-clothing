@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import CartItem from '../cart-item/cart-item.component';
@@ -14,10 +14,9 @@ import {
 } from './cart-dropdown.styles';
 
 const CartDropdown = () => {
-  const cartItems = useSelector(selectCartItems);
   const dispatch = useDispatch();
   const history = useHistory();
-
+  const cartItems = useSelector(selectCartItems);
   return (
     <CartDropdownContainer>
       <CartItemsContainer>
